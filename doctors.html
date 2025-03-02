@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - SmartCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-heartbeat"></i>
+            <span>SmartCare</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html" class="active">Doctors</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Doctors Hero Section -->
+    <section class="doctors-hero">
+        <div class="doctors-hero-content">
+            <h1>Meet Our Expert Doctors</h1>
+            <p>Experienced Healthcare Professionals at Your Service</p>
+        </div>
+    </section>
+
+    <main class="doctors-main">
+        <div class="container">
+            <!-- Search and Filter Section -->
+            <section class="doctor-search">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search doctors by name or specialty">
+                    </div>
+                    <div class="filter-options">
+                        <select class="filter-select">
+                            <option value="">All Specialties</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="orthopedics">Orthopedics</option>
+                            <option value="pediatrics">Pediatrics</option>
+                        </select>
+                        <select class="filter-select">
+                            <option value="">Available Time</option>
+                            <option value="morning">Morning</option>
+                            <option value="afternoon">Afternoon</option>
+                            <option value="evening">Evening</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Doctors -->
+            <section class="featured-doctors">
+                <div class="section-header">
+                    <h2>Our Medical Specialists</h2>
+                    <p>Expert doctors with years of experience</p>
+                </div>
+                <div class="doctors-grid">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://placehold.co/300x400" alt="Dr. Sarah Smith">
+                            <div class="availability online">
+                                <span>Available Now</span>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Sarah Smith</h3>
+                            <p class="specialty">Cardiologist</p>
+                            <div class="credentials">
+                                <span><i class="fas fa-graduation-cap"></i> MD, FACC</span>
+                                <span><i class="fas fa-briefcase"></i> 15+ Years</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(120+ Reviews)</span>
+                            </div>
+                            <div class="schedule-info">
+                                <div class="schedule-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <i class="fas fa-video"></i>
+                                    <span>Telemedicine Available</span>
+                                </div>
+                            </div>
+                            <div class="doctor-actions">
+                                <button class="btn-book">Book Appointment</button>
+                                <button class="btn-profile">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://placehold.co/300x400" alt="Dr. John Davis">
+                            <div class="availability busy">
+                                <span>In Consultation</span>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. John Davis</h3>
+                            <p class="specialty">Neurologist</p>
+                            <div class="credentials">
+                                <span><i class="fas fa-graduation-cap"></i> MD, PhD</span>
+                                <span><i class="fas fa-briefcase"></i> 12+ Years</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(98+ Reviews)</span>
+                            </div>
+                            <div class="schedule-info">
+                                <div class="schedule-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Mon - Thu: 10:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <i class="fas fa-video"></i>
+                                    <span>Telemedicine Available</span>
+                                </div>
+                            </div>
+                            <div class="doctor-actions">
+                                <button class="btn-book">Book Appointment</button>
+                                <button class="btn-profile">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://placehold.co/300x400" alt="Dr. Emily Chen">
+                            <div class="availability online">
+                                <span>Available Now</span>
+                            </div>
+                        </div>
+                        <div class="doctor-info">
+                            <h3>Dr. Emily Chen</h3>
+                            <p class="specialty">Pediatrician</p>
+                            <div class="credentials">
+                                <span><i class="fas fa-graduation-cap"></i> MD, FAAP</span>
+                                <span><i class="fas fa-briefcase"></i> 8+ Years</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(150+ Reviews)</span>
+                            </div>
+                            <div class="schedule-info">
+                                <div class="schedule-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Mon - Sat: 8:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="schedule-item">
+                                    <i class="fas fa-video"></i>
+                                    <span>Telemedicine Available</span>
+                                </div>
+                            </div>
+                            <div class="doctor-actions">
+                                <button class="btn-book">Book Appointment</button>
+                                <button class="btn-profile">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Specialties Section -->
+            <section class="specialties-section">
+                <div class="section-header">
+                    <h2>Our Specialties</h2>
+                    <p>Expert care in various medical fields</p>
+                </div>
+                <div class="specialties-grid">
+                    <div class="specialty-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Cardiology</h3>
+                        <p>6 Specialists</p>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Neurology</h3>
+                        <p>4 Specialists</p>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fas fa-bone"></i>
+                        <h3>Orthopedics</h3>
+                        <p>5 Specialists</p>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fas fa-baby"></i>
+                        <h3>Pediatrics</h3>
+                        <p>7 Specialists</p>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fas fa-eye"></i>
+                        <h3>Ophthalmology</h3>
+                        <p>3 Specialists</p>
+                    </div>
+                    <div class="specialty-card">
+                        <i class="fas fa-tooth"></i>
+                        <h3>Dental</h3>
+                        <p>4 Specialists</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@smartcare.com</p>
+                <p><i class="fas fa-location-dot"></i> 123 Medical Center Dr.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Emergency</h3>
+                <p class="emergency-number"><i class="fas fa-phone"></i> 911</p>
+                <p>Available 24/7</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SmartCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

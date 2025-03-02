@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCare Appointment System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fas fa-heartbeat"></i>
+            <span>SmartCare</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="animate-fade-in">Welcome to SmartCare</h1>
+            <p class="animate-fade-in-delay">Your Health, Our Priority</p>
+            <div class="hero-buttons animate-fade-in-delay-2">
+                <a href="#appointment" class="btn-primary">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
+                </a>
+                <a href="#emergency" class="btn-secondary">
+                    <i class="fas fa-phone"></i> Emergency Call
+                </a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <i class="fas fa-user-md"></i>
+                <h3>50+</h3>
+                <p>Expert Doctors</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-hospital"></i>
+                <h3>10+</h3>
+                <p>Locations</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-smile"></i>
+                <h3>10k+</h3>
+                <p>Happy Patients</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2>Why Choose SmartCare?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>24/7 Service</h3>
+                <p>Round-the-clock medical assistance for your peace of mind</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Telemedicine</h3>
+                <p>Virtual consultations from the comfort of your home</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Smart Booking</h3>
+                <p>Easy appointment scheduling via web or mobile</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Expert Care</h3>
+                <p>Top-rated healthcare professionals at your service</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Appointment Section with Enhanced Design -->
+            <div class="appointment-section" id="appointment">
+                <div class="section-header">
+                    <h2><i class="fas fa-calendar-check"></i> Book Your Appointment</h2>
+                    <p>Schedule a visit with our healthcare professionals</p>
+                </div>
+                <form id="appointmentForm" class="animated-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="patientName">Patient Name:</label>
+                            <input type="text" id="patientName" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" required placeholder="(123) 456-7890">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doctor">Select Doctor:</label>
+                            <select id="doctor" required>
+                                <option value="">Choose a doctor</option>
+                                <option value="Dr. Smith">Dr. Smith - Cardiologist</option>
+                                <option value="Dr. Johnson">Dr. Johnson - Pediatrician</option>
+                                <option value="Dr. Davis">Dr. Davis - Dermatologist</option>
+                                <option value="Dr. Wilson">Dr. Wilson - Neurologist</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="appointmentTime">Preferred Time:</label>
+                            <input type="datetime-local" id="appointmentTime" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="symptoms">Symptoms:</label>
+                            <textarea id="symptoms" rows="3" placeholder="Describe your symptoms"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group notification-section">
+                        <label>Notification Preferences:</label>
+                        <div class="notification-options">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="smsNotif" name="notifications" value="sms">
+                                <label for="smsNotif"><i class="fas fa-sms"></i> SMS Notifications</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="whatsappNotif" name="notifications" value="whatsapp">
+                                <label for="whatsappNotif"><i class="fab fa-whatsapp"></i> WhatsApp Notifications</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pushNotif" name="notifications" value="push">
+                                <label for="pushNotif"><i class="fas fa-bell"></i> Push Notifications</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-check-circle"></i> Book Appointment
+                    </button>
+                </form>
+            </div>
+
+            <!-- Emergency Section -->
+            <div class="emergency-section" id="emergency">
+                <div class="section-header">
+                    <h2><i class="fas fa-ambulance"></i> Emergency & Priority Care</h2>
+                    <p>Fast-track service for urgent medical needs</p>
+                </div>
+                <div class="priority-cards">
+                    <div class="priority-card urgent">
+                        <div class="card-header">
+                            <i class="fas fa-heartbeat"></i>
+                            <h3>Urgent Care</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Need immediate medical attention?</p>
+                            <button class="btn-emergency">
+                                <i class="fas fa-phone"></i> Emergency Hotline
+                            </button>
+                        </div>
+                    </div>
+                    <div class="priority-card fast-track">
+                        <div class="card-header">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Fast-Track Service</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Critical cases get priority treatment</p>
+                            <button class="btn-priority">
+                                <i class="fas fa-forward"></i> Request Fast-Track
+                            </button>
+                        </div>
+                    </div>
+                    <div class="priority-card risk-assessment">
+                        <div class="card-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Risk Assessment</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Auto-detection of high-risk conditions</p>
+                            <button class="btn-assessment">
+                                <i class="fas fa-stethoscope"></i> Start Assessment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Queue Management Section -->
+            <div id="queueStatus" class="queue-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-user-clock"></i> Real-time Queue Management</h2>
+                    <p>Track your position and estimated waiting time</p>
+                </div>
+                <div class="queue-cards">
+                    <div class="queue-card current-status">
+                        <div class="card-header">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h3>Your Queue Status</h3>
+                        </div>
+                        <div class="queue-info">
+                            <div class="info-item">
+                                <span class="label">Token Number:</span>
+                                <span id="tokenNumber" class="highlight">A-123</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Current Position:</span>
+                                <span id="queuePosition" class="highlight">3</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Estimated Wait:</span>
+                                <span id="waitingTime" class="highlight">15</span> minutes
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress" id="queueProgress"></div>
+                            </div>
+                            <span class="progress-text">Your turn is coming up soon</span>
+                        </div>
+                    </div>
+
+                    <div class="queue-card notifications">
+                        <div class="card-header">
+                            <i class="fas fa-bell"></i>
+                            <h3>Queue Updates</h3>
+                        </div>
+                        <div class="notification-list">
+                            <div class="notification-item">
+                                <i class="fas fa-clock"></i>
+                                <p>You will be notified 15 minutes before your turn</p>
+                            </div>
+                            <div class="notification-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Track your queue position on mobile</p>
+                            </div>
+                            <div class="notification-item">
+                                <i class="fas fa-sync"></i>
+                                <p>Real-time updates via SMS/WhatsApp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Telemedicine Section -->
+            <div id="videoCallSection" class="telemedicine-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-video"></i> Virtual Care</h2>
+                    <p>Connect with doctors from anywhere</p>
+                </div>
+                <div class="telemedicine-content">
+                    <div class="telemedicine-info">
+                        <h3>Online Consultation Benefits</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> No travel required</li>
+                            <li><i class="fas fa-check-circle"></i> Secure video platform</li>
+                            <li><i class="fas fa-check-circle"></i> Quick follow-ups</li>
+                            <li><i class="fas fa-check-circle"></i> Digital prescriptions</li>
+                        </ul>
+                        <button id="videoCallBtn" class="btn-success">
+                            <i class="fas fa-video"></i> Start Video Call
+                        </button>
+                    </div>
+                    <div class="telemedicine-image">
+                        <img src="https://placehold.co/600x400" alt="Telemedicine Consultation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@smartcare.com</p>
+                <p><i class="fas fa-location-dot"></i> 123 Medical Center Dr.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Emergency</h3>
+                <p class="emergency-number"><i class="fas fa-phone"></i> 911</p>
+                <p>Available 24/7</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SmartCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <button id="chatToggle" class="chat-toggle">
+        <i class="fas fa-comments"></i>
+    </button>
+    
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-header">
+            <div class="chat-title">
+                <i class="fas fa-user-md"></i>
+                <span>SmartCare Support</span>
+            </div>
+            <div class="chat-controls">
+                <button id="minimizeChat">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="chat-body">
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        Hello! How can I help you today?
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="sendMessage">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
